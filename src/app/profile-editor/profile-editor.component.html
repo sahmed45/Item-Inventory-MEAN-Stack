@@ -1,0 +1,18 @@
+<form [formGroup]="profileForm">
+
+    <label>
+      Item Name:
+      <input type="text" formControlName="itemName">
+    </label>
+
+    <label>
+      Item Category:
+      <input type="text" formControlName="itemCat">
+    </label>
+
+</form>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+    <p>
+        Form Status: {{ profileForm.status }}
+    </p>
