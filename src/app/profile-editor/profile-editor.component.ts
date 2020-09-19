@@ -9,15 +9,16 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class ProfileEditorComponent implements OnInit {
   profileForm = new FormGroup({
-    ItemName: new FormControl(''),
-    ItemCat: new FormControl(''),
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
   });
+
+  constructor() { }
+  ngOnInit(): void {
+  }
   onSubmit() {
     // TODO: Use EventEmitter with form value
     console.warn(this.profileForm.value);
-  }
-  constructor() { }
-  ngOnInit(): void {
   }
 
 }

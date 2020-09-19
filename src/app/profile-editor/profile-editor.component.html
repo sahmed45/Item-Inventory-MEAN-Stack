@@ -1,18 +1,14 @@
-<form [formGroup]="profileForm">
-
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
     <label>
       Item Name:
-      <input type="text" formControlName="itemName">
+      <input type="text" formControlName="firstName">
     </label>
-
     <label>
       Item Category:
-      <input type="text" formControlName="itemCat">
+      <input type="text" formControlName="lastName">
     </label>
-
-</form>
-<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
     <button type="submit" [disabled]="!profileForm.valid">Submit</button>
     <p>
         Form Status: {{ profileForm.status }}
     </p>
+</form>
