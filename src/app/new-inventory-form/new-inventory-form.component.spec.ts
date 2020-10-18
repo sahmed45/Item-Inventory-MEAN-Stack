@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NameEditorComponent } from './name-editor.component';
+import { NewInventoryFormComponent } from './new-inventory-form.component';
 
-describe('NameEditorComponent', () => {
-  let component: NameEditorComponent;
-  let fixture: ComponentFixture<NameEditorComponent>;
+describe('NewInventoryFormComponent', () => {
+  let component: NewInventoryFormComponent;
+  let fixture: ComponentFixture<NewInventoryFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [NameEditorComponent],
+      declarations: [NewInventoryFormComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NameEditorComponent);
+    fixture = TestBed.createComponent(NewInventoryFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

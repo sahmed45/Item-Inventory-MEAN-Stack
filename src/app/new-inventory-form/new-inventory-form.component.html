@@ -1,0 +1,22 @@
+<div>
+    <h3>New Inventory Form</h3>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+      <mat-form-field >
+        <input matInput placeholder="Item Name" id="itemName" [(ngModel)]=" itemName" name="itemName" >
+      </mat-form-field>
+    
+      <mat-form-field >
+        <input matInput placeholder="Item Category" id="itemCategory" [(ngModel)]=" itemCategory" name="itemCategory" >
+      </mat-form-field>
+      <mat-form-field >
+        <input matInput placeholder="Price" id="price" [(ngModel)]=" price" name="price" >
+      </mat-form-field>
+      <mat-form-field >
+        <input matInput placeholder="Stock" id="stock" [(ngModel)]=" stock" name="stock" >
+      </mat-form-field>
+    
+      <p>
+        <button type="submit" mat-raised-button color="primary">Submit</button>      </p>
+    </form>
+    </div>
+    

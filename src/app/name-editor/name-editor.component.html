@@ -1,10 +1,8 @@
 <label>
-    Item Name:
-    <input type="text" [formControl]="name">
-  </label>
+  Item Name:
+  <input type="text" [formControl]="name" />
+</label>
+<p>Value: {{ name.value }}</p>
 <p>
-    Value: {{ name.value }}
-</p>
-<p>
-    <button (click)="updateName()">Update Name</button>
+  <button (click)="updateName()">Update Name</button>
 </p>
