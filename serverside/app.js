@@ -7,7 +7,7 @@ const Item = require("./models/item");
 // connect and display the status
 mongoose
   .connect(
-    "mongodb+srv://syed:syedahmed@cluster0.vgcwq.mongodb.net/<IT6203>?retryWrites=true&w=majority",
+    "mongodb+srv://sye4545d:syeda4545hmed@4545cluster0.vgcwq.mongo4545db.ne4545t/<IT6203>?retryWrites=true&w=majority",
     { useNewUrlParser: true }
   )
   .then(() => {
