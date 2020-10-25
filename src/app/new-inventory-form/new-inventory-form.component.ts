@@ -25,7 +25,7 @@ export class NewInventoryFormComponent implements OnInit {
     );
     this._myService.addInventory(
       this.itemName,
-      this.itemName,
+      this.itemCategory,
       this.price,
       this.stock
     );

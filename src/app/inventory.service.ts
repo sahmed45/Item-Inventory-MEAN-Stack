@@ -13,6 +13,15 @@ export class InventoryService {
   getInventory() {
     return this.http.get('http://localhost:8000/inventory');
   }
+  deleteItem(itemId: string) {
+    this.http
+      .delete('http://localhost:8000/inventory/' + itemId)
+      .subscribe(() => {
+        console.log('Deleted: ' + itemId);
+      });
+    location.reload();
+  }
+
   // Uses http.post() to post data
   addInventory(
     itemName: string,
@@ -30,5 +39,6 @@ export class InventoryService {
       .subscribe((responseData) => {
         console.log(responseData);
       });
+    location.reload();
   }
 }

@@ -19,6 +19,10 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.getInventory();
   }
+  onDelete(itemId: string) {
+    this._myService.deleteItem(itemId);
+  }
+
   //method called OnInit
   getInventory() {
     this._myService.getInventory().subscribe(

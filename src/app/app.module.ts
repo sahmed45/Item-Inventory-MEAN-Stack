@@ -17,7 +17,6 @@ import { MatButtonModule } from '@angular/material/button';
   declarations: [AppComponent, NewInventoryFormComponent], //NameEditorComponent],
   imports: [
     BrowserModule,
-
     FormsModule,
     HttpClientModule,
     MatFormFieldModule,
